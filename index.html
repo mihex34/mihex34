@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeRoute – Crowdfunding kampanja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #222;
+        }
+        header {
+            background: #111827;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+        }
+        header p {
+            margin-top: 0.5rem;
+            color: #e5e7eb;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .banner-placeholder {
+            width: 100%;
+            height: 220px;
+            border: 2px dashed #9ca3af;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            background: #f9fafb;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .top-section {
+            display: grid;
+            grid-template-columns: 2fr 1.5fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 260px;
+            border: 2px dashed #9ca3af;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            background: #f9fafb;
+            text-align: center;
+        }
+        .summary-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 1.2rem 1.4rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        .summary-card h2 {
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        .summary-card p {
+            margin-bottom: 0.5rem;
+        }
+        .goal {
+            margin-top: 0.8rem;
+            padding: 0.7rem;
+            border-radius: 8px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        h2.section-title {
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.4rem;
+            color: #111827;
+        }
+        p {
+            margin-bottom: 0.7rem;
+        }
+        ul {
+            margin-left: 1.2rem;
+            margin-bottom: 0.7rem;
+        }
+        li {
+            margin-bottom: 0.3rem;
+        }
+        .rewards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .reward-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid #2563eb;
+        }
+        .reward-card h3 {
+            margin-bottom: 0.4rem;
+            font-size: 1.05rem;
+        }
+        .reward-card span {
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 180px;
+            border: 2px dashed #9ca3af;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            background: #f9fafb;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .cta-section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #111827;
+            color: #f9fafb;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            margin-bottom: 0.6rem;
+        }
+        .cta-section p {
+            margin-bottom: 1rem;
+        }
+        .cta-section button {
+            background: #22c55e;
+            color: #111827;
+            border: none;
+            padding: 0.8rem 1.6rem;
+            border-radius: 999px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .cta-section button:hover {
+            background: #16a34a;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+        @media (max-width: 768px) {
+            .top-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SafeRoute – aplikacija za sigurno kretanje gradom</h1>
+    <p>“Najkraći put nije uvijek najsigurniji.”</p>
+</header>
+
+<div class="container">
+
+    <!-- PRAZNO MJESTO ZA BANNER NA VRHU -->
+    <div class="banner-placeholder">
+       banner
+    </div>
+
+    <div class="top-section">
+        <!-- PRAZNO MJESTO ZA VIDEO PRI VRHU STRANICE -->
+        <div class="video-placeholder">
+            video
+        </div>
+
+        <div class="summary-card">
+            <h2>Zašto SafeRoute?</h2>
+            <p>SafeRoute je mobilna aplikacija koja pomaže korisnicima da odaberu sigurnije pješačke rute u gradu.</p>
+            <p>Umjesto da bira samo najkraći put, SafeRoute uzima u obzir osvijetljenost, sigurnost kvartova, prisutnost ljudi i prijavljene incidente.</p>
+            <div class="goal">
+                Cilj kampanje: financirati razvoj MVP verzije i testirati tržište.
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Problem koji rješavamo</h2>
+    <p>
+        Sigurnost pri kretanju gradom, osobito noću ili na nepoznatim lokacijama, veliki je izazov za mnoge ljude.
+        Postojeće navigacijske aplikacije fokusirane su na promet i vrijeme putovanja, a zanemaruju osjećaj sigurnosti pješaka.
+    </p>
+    <p>
+        SafeRoute nastaje iz osobnog iskustva nesigurnosti pri večernjim povratcima kući i potrebe za alatom koji
+        stavlja pješake u središte.
+    </p>
+
+    <h2 class="section-title">Kako SafeRoute funkcionira</h2>
+    <ul>
+        <li><strong>Sigurne rute:</strong> algoritam bira rute prema osvijetljenosti, frekvenciji prolaznika i sigurnosnim podacima.</li>
+        <li><strong>Ocjenjivanje ulica:</strong> korisnici ocjenjuju koliko se sigurno osjećaju u pojedinim dijelovima grada.</li>
+        <li><strong>Praćenje u stvarnom vremenu:</strong> dijeljenje lokacije s pouzdanim osobama.</li>
+        <li><strong>SOS funkcija:</strong> brzo slanje upozorenja u slučaju opasnosti.</li>
+        <li><strong>Noćni način rada:</strong> prilagođeno korištenju u mraku.</li>
+    </ul>
+
+    <h2 class="section-title">Ciljana skupina</h2>
+    <p><strong>Primarna:</strong> mlade žene, studenti, noćni radnici, turisti u nepoznatim gradovima.</p>
+    <p><strong>Sekundarna:</strong> starije osobe, roditelji, lokalne zajednice i gradovi.</p>
+
+    <h2 class="section-title">Nagrade za donatore</h2>
+    <div class="rewards-grid">
+        <div class="reward-card">
+            <h3><span>5 €</span> – simbolična podrška</h3>
+            <p>Simbolična zahvala + tvoje ime u aplikaciji (posebna sekcija zahvala).</p>
+        </div>
+        <div class="reward-card">
+            <h3><span>15 €</span> – 6 mjeseci premiuma</h3>
+            <p>Dobivaš 6 mjeseci premium verzije s naprednim analizama ruta i automatskim praćenjem.</p>
+        </div>
+        <div class="reward-card">
+            <h3><span>30 €</span> – doživotni premium</h3>
+            <p>Doživotni premium račun – sve buduće premium funkcije bez dodatne naplate.</p>
+        </div>
+        <div class="reward-card">
+            <h3><span>50 €</span> – beta tester</h3>
+            <p>Mogućnost sudjelovanja u beta testiranju + doživotni premium i posebno istaknuto ime u aplikaciji.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title"></h2>
+    
+    <div class="image-gallery">
+        <!-- PRAZNA MJESTA ZA SLIKE -->
+        <div class="image-placeholder">
+            slika 1
+        </div>
+        <div class="image-placeholder">
+            slika 2
+        </div>
+        <div class="image-placeholder">
+            slika 3
+        </div>
+    </div>
+
+    <h2 class="section-title">Na što trošimo prikupljena sredstva?</h2>
+    <ul>
+        <li><strong>Vrijeme razvoja:</strong> oko 1.500 € za izradu početne verzije (sigurna ruta, karta, SOS).</li>
+        <li><strong>Registracija domene:</strong> ~15 € godišnje (npr. saferoute.app).</li>
+        <li><strong>Hosting / server:</strong> ~120 € godišnje za osnovni cloud hosting.</li>
+        <li><strong>Google Play račun:</strong> 25 € jednokratno.</li>
+        <li><strong>Apple Developer račun:</strong> 99 € godišnje.</li>
+    </ul>
+
+
+    <div class="cta-section">
+        <h2>Podrži SafeRoute danas</h2>
+        <p>
+            Tvoja donacija pomaže da gradovi postanu sigurniji za šetnju, posebno za one koji se često osjećaju
+            nesigurno na putu kući.
+        </p>
+        <button>Podrži kampanju</button>
+    </div>
+
+</div>
+
+<footer>
+    SafeRoute – studentski projekt | Ideja i izrada: Barbara Kuharić, 4.G
+</footer>
+
+</body>
+</html>
