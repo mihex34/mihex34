@@ -54,11 +54,17 @@
             height: 200px;
         }
 
-        .banner-placeholder img,
-        .image-placeholder img {
+        .banner-placeholder img{
             width: 100%;
             height: 100%;
             object-fit: cover; /* change to contain if you don't want cropping */
+            display: block;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* change to contain if you don't want cropping */
             display: block;
         }
 
@@ -243,10 +249,10 @@
 
     <div class="image-gallery">
         <div class="image-placeholder">
-            
+            <img src="Snimka zaslona 2026-02-16 093602.jpg" alt="Prikaz aplikacije 1">
         </div>
         <div class="image-placeholder">
-         
+            <img src="Snimka zaslona 2026-02-16 093617.jpg" alt="Prikaz aplikacije 2">
         </div>
     </div>
 
@@ -264,4 +270,3 @@
 
 </body>
 </html>
-
